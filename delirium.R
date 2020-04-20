@@ -37,8 +37,6 @@ send_mesage_to <- function(peer_id, text) {
        encode = "form")
 }
 
-
-
 main <- function() {
   get_server_response_raw <<- POST(url_get_server,
                                    body   = data_load_get_server,
@@ -118,7 +116,6 @@ main <- function() {
                            paste(message_text,
                                  generated,
                                  sep = ""))
-            stop("ERROR")
           }
         }
       }
